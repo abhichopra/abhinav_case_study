@@ -36,3 +36,95 @@
     transform: rotate(360deg);
   }
 }
+
+.app-content {
+  padding-top: 10px;
+}
+
+.filterBox {
+  border: 1px solid;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.padding-10 {
+  padding: 10px;
+}
+
+.charater-card {
+  position: relative;
+  color: white;
+  background-color: #53565d;
+  padding-bottom: 10px;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+
+.characters-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #1b1d23;
+}
+
+.charater-card>p {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  border-bottom: 1px solid #585858;
+  /* color: white; */
+}
+
+.character-card-overlay {
+  position: absolute;
+  width: 100%;
+  max-width: 300px;
+  height: 90px;
+  top: 220px;
+  opacity: .8;
+  background-color: #2b2f38;
+  padding-left: 10px;
+}
+
+.character-card-details {
+  color: #dcba3d;
+  text-align: end;
+}
+
+.aside {
+  width: 100%;
+  padding-left: 4px;
+}
+
+.characters-container {
+  padding-left: 8px;
+  margin-top: 91px;
+}
+
+.selected-filter-container {
+  width: 32%;
+  margin-top: 37px;
+  border: 1px solid;
+  height: 50px;
+  /* display: flex; */
+  position: absolute;
+  left: 12%;
+}
+
+@media only screen and (min-width: 600px) {
+  .app-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .aside {
+    width: 150px;
+  }
+  .characters-container {
+    width: calc(100% - 162px);
+    margin-top: 91px;
+  }
+}
